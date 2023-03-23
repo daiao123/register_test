@@ -1,0 +1,13 @@
+pytest==6.2.4
+requests==2.25.1
+pyyaml==5.4.1
+PyHamcrest==2.0.2
+allure-pytest==2.9.43
+click==8.0.3
+faker==15.3.2
+openpyxl==3.0.10
+selenium==4.3
+webdriver-manager==3.7.0
+Appium-Python-Client==2.6.0
+jenkinsapi==0.3.11
+uiautomator2==2.16.17
