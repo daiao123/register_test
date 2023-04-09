@@ -30,9 +30,9 @@ class DonatorBaseinfoSave(BaseApi):
             "profession": "务农",
             "township": "",
             "remark": "",
-            "frontPhoto": "http://berry.dev.uplasm.com/file/tests/demo.jpg",
-            "backPhoto": "http://berry.dev.uplasm.com/file/tests/demo.jpg",
-            "headImage": "http://berry.dev.uplasm.com/file/tests/demo.jpg",
+            "frontPhoto": "*",
+            "backPhoto": "*",
+            "headImage": "*",
             "score": 0.91
         }
         resp = requests.post(url, json=json_body, headers=self.login_token)
