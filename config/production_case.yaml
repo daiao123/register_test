@@ -1,8 +1,8 @@
 # 账号
-mobile: "13300000000"
+mobile: "*"
 # 密码
-password: "@@@chuanyueb29c71bfcc4dcbd18b97a0830c3afd34"
+password: "*"
 # 生产环境配置
-test_url: "http://172.16.243.240:30080/"
+test_url: "*"
 # idcard_image图片
-idcard_image: "http://berry.dev.uplasm.com/file/tests/demo.jpg"
+idcard_image: "*"
