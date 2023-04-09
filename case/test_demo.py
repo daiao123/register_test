@@ -16,7 +16,7 @@ class TestSysLogin:
     @allure.title("注册")
     def test_donator_baseinfo_save(self):
         resp = DonatorBaseinfoSave().donator_baseinfo_save()
-        assert resp['code'] == 0
+        assert resp['code'] == "0"
 
     @allure.title("登记")
     def test_donator_seq_register(self):

@@ -3547,7 +3547,7 @@ class IdNumber(str):
         # 随机生成一个区域码(6位数)
         id_number = str(random.choice(list(AREA_INFO.keys())))
         # 限定出生日期范围(8位数)
-        start, end = datetime.strptime("1960-01-01", "%Y-%m-%d"), datetime.strptime("2000-12-30", "%Y-%m-%d")
+        start, end = datetime.strptime("1980-01-01", "%Y-%m-%d"), datetime.strptime("2002-12-30", "%Y-%m-%d")
         birth_days = datetime.strftime(start + timedelta(random.randint(0, (end - start).days + 1)), "%Y%m%d")
         id_number += str(birth_days)
         # 顺序码(2位数)
@@ -3558,6 +3558,8 @@ class IdNumber(str):
         return id_number + str(cls(id_number).get_check_digit())
 
 
-if __name__ == '__main__':
-    random_sex = random.randint(0, 1)  # 随机生成男(1)或女(0)
-    print(IdNumber.generate_id(random_sex))  # 随机生成身份证号
+random_sex = random.randint(0, 1)  # 随机生成男(1)或女(0)
+idcardId = IdNumber.generate_id(random_sex)  # 随机生成身份证号
+# if __name__ == '__main__':
+#     random_sex = random.randint(0, 1)  # 随机生成男(1)或女(0)
+#     print(IdNumber.generate_id(random_sex))  # 随机生成身份证号
